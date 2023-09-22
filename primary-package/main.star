@@ -4,3 +4,8 @@ sibling_module = import_module("github.com/kurtosis-tech/sample-startosis-load/s
 
 def run(plan, args):
     plan.print("Primary package loaded.")
+
+    msg_from_sibling = sibling_module.get_msg()
+    msg_to_return = "Message from secondary package: '{0}'".format(msg_from_sibling)
+
+    return msg_to_return
