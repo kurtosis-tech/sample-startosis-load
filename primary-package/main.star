@@ -5,6 +5,7 @@ sibling_module = import_module("github.com/kurtosis-tech/sample-startosis-load/s
 def run(plan, args):
     plan.print("Primary package loaded.")
 
-    msg_to_return = "Message from primary package"
+    msg_to_return = sibling_module.random_msg()
 
     return msg_to_return
+
