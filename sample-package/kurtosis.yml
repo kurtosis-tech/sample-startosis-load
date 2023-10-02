@@ -1,2 +1,5 @@
 # This package was created to test replace directives
 name: github.com/kurtosis-tech/sample-startosis-load/sample-package
+replace:
+  # Replacing the package with the 'another-message' branch version
+  github.com/kurtosis-tech/sample-dependency-package: github.com/kurtosis-tech/sample-dependency-package@another-message
